@@ -1,7 +1,17 @@
 import Link from 'next/link'
-import React from 'react'
+import { useRouter } from 'next/navigation'
+import React, { useEffect } from 'react'
 
 const NotFound = () => {
+    const router = useRouter()
+
+    useEffect(() => {
+       const redirectTimeout =  setTimeout(()=>{
+            router.push("/")
+        }, 3000)
+        return ()=> clearTimeout(redirectTimeout)
+    }, [])
+    
   return (
     <div className="not-found">
         <h1>Oooops....</h1>

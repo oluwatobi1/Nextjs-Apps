@@ -1,10 +1,13 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <nav>
-        <div className='logo'><h1>People</h1></div>
+        <div className='logo'>
+            <Image src="/sticker.png" width={100} height={77}/>
+            </div>
         <Link href="/">
         Home
         </Link>
