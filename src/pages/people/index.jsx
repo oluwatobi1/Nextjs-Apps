@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "../../styles/People.module.css"
+
 export const getStaticProps = async ()=>{
     const res = await fetch("https://jsonplaceholder.typicode.com/users")
     const data = await res.json()
