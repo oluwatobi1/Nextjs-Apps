@@ -17,6 +17,9 @@ const Navbar = () => {
         <Link href="/people">
         Person Listing
         </Link>
+        <Link href="/fancity">
+        Fancity
+        </Link>
     </nav>
   )
 }
